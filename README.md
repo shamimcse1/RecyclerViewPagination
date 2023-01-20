@@ -1,7 +1,36 @@
-# Pagination-RecyclerView
+# RecyclerView-Pagination
 Simple and easy way to Paginating a RecyclerView
 
-Android library/module to make Recyclerview paginate 
+## Including in your project
+[![](https://jitpack.io/v/shamimcse1/RecyclerViewPagination.svg)](https://jitpack.io/#shamimcse1/RecyclerViewPagination)
+
+### Gradle
+Add below codes to your **root** `build.gradle` file (not your module build.gradle file).
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+And add a dependency code to your **module**'s `build.gradle` file.
+```gradle
+dependencies {
+	      implementation 'com.github.shamimcse1:RecyclerViewPagination:1.0.0'
+	}
+```
+
+## Basic Usage
+Add in you Activity file.
+
+This is how you can add the custom recycler view
+
+    <com.codercamp.recyclerview_pagination.PaginationRecyclerView
+        android:id="@+id/custom_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 While scrolling we need to add page chnage listener so that we can detect the ending of list and can work as per our needs
 
@@ -12,14 +41,6 @@ While scrolling we need to add page chnage listener so that we can detect the en
                 //TODO Add own code here to fetch data
             }
         })
-
-
-This is how you can add the custom recycler view (chnage the tag as per your package name)
-
-    <com.codercamp.recyclerview_pagination.PaginationRecyclerView
-        android:id="@+id/custom_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 Now you can initialize the Recyclerview like below
 
