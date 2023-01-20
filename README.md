@@ -16,17 +16,10 @@ While scrolling we need to add page chnage listener so that we can detect the en
 
 This is how you can add the custom recycler view (chnage the tag as per your package name)
 
-    <com.rakshit.pagination_recyclerview.PaginationRecyclerView
+    <com.codercamp.recyclerview_pagination.PaginationRecyclerView
         android:id="@+id/custom_recycler_view"
         android:layout_width="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-        app:spanCount="2"
-        tools:listitem="@layout/item_photos"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="match_parent"/>
 
 Now you can initialize the Recyclerview like below
 
@@ -44,11 +37,4 @@ Now you can initialize the Recyclerview like below
 
 **Note**: You need to create your own Recyclerview's adapter as per your need, a sample is already added in code base
 
-Like what I did buy me coffee maybe?
-
-<a href='https://ko-fi.com/P5P57R3V2' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-or get in touch with me to discuss a project visit http://rakshit.tech/ to discuss with me more.
-
 Happy Coding !!
-Cheers
