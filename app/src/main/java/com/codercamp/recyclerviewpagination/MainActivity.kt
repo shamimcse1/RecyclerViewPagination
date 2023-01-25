@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import com.codercamp.recyclerview_pagination.OnPageChangeListener
-import com.codercamp.recyclerview_pagination.PaginationRecyclerView
+import androidx.viewpager.widget.ViewPager
+
 import java.util.*
 
 
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = GridLayoutManager(this, 2)
-        recyclerView.setOnPageChangeListener(object : OnPageChangeListener {
+        recyclerView.setOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageChange(page: Int) {
                 //Page change listener for recycler view
                 //Page changed fetch more data from here
